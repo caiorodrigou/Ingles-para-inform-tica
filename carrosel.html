@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="carrosel.css" />
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <body>
+    <header>
+      <div>
+        <img src="imagens/Vector.png" alt="" id="logo" />
+        <h1 id="titulo_da_logo">Performance</h1>
+        <nav>
+          <ul>
+            <li><a href="site.html">Home</a></li>
+            <li><a href="site2.html">Planos</a></li>
+            <li><a href="conheça.html">Conheça</a></li>
+            <li><a href="carrosel.html">Áreas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    
+    </div>
+    <h1 id="ti">áreas dos serviços</h1>
+
+    <!-- Container for the image gallery -->
+    <div class="container">
+      <!-- Full-width images with number text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="imagens/area_box.webp" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="imagens/area_academia.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="imagens/area_natação.png" style="width: 100%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="imagens/area_dança.webp" style="width: 100%" />
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Image text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="imagens/area_box.webp"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="box"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="imagens/area_academia.jpg"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="academia"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="imagens/area_natação.png"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="natação"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="imagens/area_dança.webp"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="dança"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>© 2025 academia - performance. Todos os direitos reservados.</p>
+
+        <div class="mapa-site">
+          <a href="#">Home</a>
+          <a href="#">Planos</a>
+          <a href="#">Conheça</a>
+          <a href="#">Dúvidas</a>
+          <a href="#">Contato</a>
+        </div>
+
+        <div class="newsletter">
+          <p>Receba novidades da academia:</p>
+          <input type="email" placeholder="Seu e-mail" />
+          <button>Inscrever-se</button>
+        </div>
+
+        <div class="horarios">
+          <p>Horário de Funcionamento: Seg-Sáb: 6h - 22h | Dom: 8h - 14h</p>
+        </div>
+
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+
+        <p>Local: R. Antônio Lopes Filho, 372, Apodi-RN</p>
+
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509369!2d144.95565131566815!3d-37.8173277420145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727ab1dffbe7b2!2sAcademia!5e0!3m2!1spt-BR!2sbr!4v1610000000000"
+            width="300"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </footer>
+    <script src="carrosel.js"></script>
+  </body>
+</html>
